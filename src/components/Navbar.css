@@ -1,0 +1,59 @@
+.navbar {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.avatar,
+.avatar-header {
+  object-fit: contain;
+  height: 40px;
+  margin-left: 20px;
+  cursor: pointer;
+  display: none;
+}
+
+.jumbotron {
+  padding: 20px 0px;
+}
+
+.search-input {
+  background-color: whitesmoke;
+  padding: 10px;
+  border-radius: 15px;
+  display: flex;
+  justify-content: flex-start;
+  align-items: center;
+  width: 40%;
+}
+
+.search-input > input {
+  border: none;
+  background-color: whitesmoke;
+  outline: none;
+  width: 100%;
+  margin: 0px 20px;
+}
+
+/* `sm` applies to x-small devices (portrait phones, less than 576px) */
+@media screen and (max-width: 575.98px) {
+  .avatar-header {
+    display: block;
+    float: right;
+  }
+}
+
+/* `md` applies to small devices (landscape phones, less than 768px) */
+@media screen and (min-width: 767.98px) {
+  .avatar-header {
+    display: block;
+    float: right;
+  }
+}
+
+/* `lg` applies to medium devices (tablets, less than 992px) */
+@media screen and (min-width: 991.98px) {
+  .avatar {
+    display: block;
+  }
+}

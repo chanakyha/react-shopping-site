@@ -4,7 +4,7 @@ import "./Navbar.css";
 function Navbar() {
   return (
     <div classNameNameName="navbar">
-      <nav className="navbar navbar-light bg-light fixed-top">
+      <nav className="navbar navbar-dark bg-dark text-light navbar-expand-lg">
         <div className="container-fluid">
           <a className="navbar-brand" href="#">
             FireMart
@@ -19,14 +19,18 @@ function Navbar() {
             <span className="navbar-toggler-icon"></span>
           </button>
           <div
-            className="offcanvas offcanvas-end"
+            className="offcanvas offcanvas-end bg-dark"
             tabindex="-1"
             id="offcanvasNavbar"
             aria-labelledby="offcanvasNavbarLabel"
           >
             <div className="offcanvas-header">
               <h5 className="offcanvas-title" id="offcanvasNavbarLabel">
-                Offcanvas
+                Menu
+                <img
+                  src="https://www.w3schools.com/w3images/avatar5.png"
+                  className="rounded-circle avatar-header"
+                />
               </h5>
               <button
                 type="button"
@@ -37,11 +41,6 @@ function Navbar() {
             </div>
             <div className="offcanvas-body">
               <ul className="navbar-nav justify-content-end flex-grow-1 pe-3">
-                <li className="nav-item">
-                  <a className="nav-link active" aria-current="page" href="#">
-                    Home
-                  </a>
-                </li>
                 <li className="nav-item">
                   <a className="nav-link" href="#">
                     Link
@@ -82,22 +81,32 @@ function Navbar() {
                     </li>
                   </ul>
                 </li>
+                <li className="nav-item">
+                  <img
+                    src="https://www.w3schools.com/w3images/avatar5.png"
+                    className="rounded-circle avatar"
+                  />
+                </li>
               </ul>
-              <form className="d-flex">
-                <input
-                  className="form-control me-2"
-                  type="search"
-                  placeholder="Search"
-                  aria-label="Search"
-                />
-                <button className="btn btn-outline-success" type="submit">
-                  Search
-                </button>
-              </form>
             </div>
           </div>
         </div>
       </nav>
+      <div className="jumbotron bg-secondary">
+        <div className="container">
+          <h1 className="display-4">Welcome to FireMart</h1>
+          <p className="lead">
+            The Place where you get your stuffs much more quicker than others
+          </p>
+          <hr className="my-4" />
+          <p className="lead">
+            <div className="search-input">
+              <i className="bi bi-search"></i>
+              <input type="text" />
+            </div>
+          </p>
+        </div>
+      </div>
     </div>
   );
 }
