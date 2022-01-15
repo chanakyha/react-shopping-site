@@ -1,0 +1,19 @@
+.laptops {
+  width: 100%;
+}
+
+.products {
+  display: flex;
+  padding: 20px;
+  justify-content: space-around;
+  align-items: center;
+}
+/* Mobiles */
+@media screen and (max-width: 576px) {
+}
+/* Tablets */
+@media screen and (max-width: 768px) {
+}
+/* Laptops */
+@media screen and (min-width: 992px) {
+}

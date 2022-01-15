@@ -1,0 +1,14 @@
+.card {
+  border: 1px solid grey;
+}
+
+.card > img {
+  object-fit: contain;
+  height: 20vh;
+  padding: 20px;
+}
+
+.card > .card-body > p {
+  word-wrap: contain;
+  width: 20vw;
+}

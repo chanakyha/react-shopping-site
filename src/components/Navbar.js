@@ -103,6 +103,7 @@ function Navbar() {
             <div className="search-input">
               <i className="bi bi-search"></i>
               <input type="text" />
+              <div className="btn btn-success">Search</div>
             </div>
           </p>
         </div>

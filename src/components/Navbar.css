@@ -24,35 +24,49 @@
   display: flex;
   justify-content: flex-start;
   align-items: center;
-  width: 40%;
+  width: 45%;
+}
+
+.search-input:focus-within {
+  border: 2px solid var(--bs-primary);
+}
+
+.search-input > i {
+  margin-left: 10px;
 }
 
 .search-input > input {
   border: none;
-  background-color: whitesmoke;
+  background-color: transparent;
   outline: none;
   width: 100%;
   margin: 0px 20px;
 }
 
 /* `sm` applies to x-small devices (portrait phones, less than 576px) */
-@media screen and (max-width: 575.98px) {
+@media screen and (max-width: 576px) {
   .avatar-header {
     display: block;
     float: right;
+  }
+  .jumbotron {
+    text-align: center;
   }
 }
 
 /* `md` applies to small devices (landscape phones, less than 768px) */
-@media screen and (min-width: 767.98px) {
+@media screen and (max-width: 768px) {
   .avatar-header {
     display: block;
     float: right;
   }
+  .search-input {
+    width: 100%;
+  }
 }
 
 /* `lg` applies to medium devices (tablets, less than 992px) */
-@media screen and (min-width: 991.98px) {
+@media screen and (min-width: 992px) {
   .avatar {
     display: block;
   }

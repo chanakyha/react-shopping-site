@@ -2,3 +2,13 @@
   margin: 0;
   padding: 0;
 }
+
+.content {
+  background: rgb(214, 212, 212);
+  background: linear-gradient(
+    75deg,
+    rgba(214, 212, 212, 1) 0%,
+    rgba(246, 246, 246, 1) 50%,
+    rgba(213, 211, 211, 1) 100%
+  );
+}
